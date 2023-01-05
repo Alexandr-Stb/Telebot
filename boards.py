@@ -11,7 +11,7 @@ def mainBoard():
     game_button = types.KeyboardButton(commands.goGame)
     website = types.KeyboardButton(commands.settings)
     start = types.KeyboardButton(commands.aboutBot)
-    exchangeRates = types.KeyboardButton(commands.exchangeRates)
+    # exchangeRates = types.KeyboardButton(commands.exchangeRates)
 
-    markup.add(website, start, game_button, exchangeRates)
+    markup.add(website, start, game_button)
     return markup

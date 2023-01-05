@@ -11,7 +11,7 @@ from exchangeRates import exchangeRatesMenu
 bot = telebot.TeleBot("5319244723:AAEdqpK9SA_ZSQGSbtIfwq-zvQkwEBZcgY0")
 
 blackJackGame.blackjackCommands(bot)
-exchangeRatesMenu.exchangeRates(bot)
+# exchangeRatesMenu.exchangeRates(bot)
 settingsMenu.settingsCommands(bot)
 
 
@@ -68,7 +68,7 @@ def backMenu(message):
 @bot.message_handler(func=lambda message: message.text == commands.aboutBot)
 def messageStartGame(message):
     if not bjData.startGame:
-        bot.send_message(message.chat.id, "Я обычный бот, находящийся в разработке)")
+        bot.send_message(message.chat.id, "Я бот крупье, сыграем?)")
 
     else:
         bot.send_message(message.chat.id, "Что?)")
