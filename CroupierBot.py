@@ -51,7 +51,7 @@ def messageStartGame(message):
 def exchange(message):
     if mainData.whereUser == sections["mMenu"]:
         mainData.whereUser = sections["rates"]
-        exchangeRatesMenu.ratesMenu(message)
+        # exchangeRatesMenu.ratesMenu(message)
     else:
         bot.send_message(message.chat.id, "Что?)")
 
